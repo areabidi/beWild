@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> 🍓 Berry Checker 🍓</title>
+</head>
+<body>
+    <h1>Check if a Berry is Edible 🍓</h1>
+
+    <!-- Display result or error message -->
+    {% if result %}
+        <p style="color: red;">{{ result }}</p>
+    {% endif %}
+
+    <form method="POST" enctype="multipart/form-data">
+      
+        <input type="file" name="image" accept="image/*" capture="environment" required>
+  
+        <button type="submit">Upload Image</button>
+    </form>
+</body>
+</html>
